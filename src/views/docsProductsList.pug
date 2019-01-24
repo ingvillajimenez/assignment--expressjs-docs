@@ -1,0 +1,30 @@
+html
+  head
+    title Products List
+    link(rel='stylesheet', href='/static/css/app.css')
+  body
+    h1=projectTitle
+    div.container
+        div.column1
+            aside 
+            ul
+                li 
+                    a(href='/docs/books/list') GET /books
+                li 
+                    a(href='/docs/books/item') GET /books/:id
+                li 
+                    a(href='/docs/products/list') GET /products
+                li 
+                    a(href='/docs/products/item') GET /products/:id
+        div.column2
+            h3 Endpoint
+            p https://api.myownfancyproject.com/products
+            h3 Objective
+            p 
+            h3 Request
+            p Here is an example of a GET request that gets a list of products:
+            p GET https://api.myownfancyproject.com/products
+        div.column3
+            h3.title Response
+            pre=snippet
+

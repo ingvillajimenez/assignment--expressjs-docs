@@ -1,0 +1,21 @@
+html
+    head
+        title REST API
+        link(rel='stylesheet', href='/static/css/app.css')
+    body
+        div.center
+            h1=projectTitle
+            h2 Using the API
+            h3 Introduction
+            p This document is intended for developers who want to write applications that can interact with the myownfancyproject API. 
+            h3 Getting Started
+            div.container
+                ul
+                    li
+                        a(href='/docs/books/list') GET /books
+                    li
+                        a(href='/docs/books/item') GET /books/:id
+                    li
+                        a(href='/docs/products/list') GET /products
+                    li
+                        a(href='/docs/products/item') GET /products/:id
