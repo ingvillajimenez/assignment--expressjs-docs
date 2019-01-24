@@ -3,7 +3,8 @@ html
     title Books List
     link(rel='stylesheet', href='/static/css/app.css')
   body
-    h1=projectTitle
+    div.title
+        h1=projectTitle
     div.container
         div.column1
             aside 
@@ -16,15 +17,16 @@ html
                     a(href='/docs/products/list') GET /products
                 li 
                     a(href='/docs/products/item') GET /products/:id
+                li
+                    a(href='/') Go to home
         div.column2
-            h3 Endpoint
+            h3 Retrieving a list of books
+            p You can retrieve a list of books by sending an HTTP GET request to the URI with the following format:
             p https://api.myownfancyproject.com/books
-            h3 Objective
-            p You can retrieve a list of a user's public bookshelves by sending an HTTP GET request to the URI with the following format:
             h3 Request
             p Here is an example of a GET request that gets a list of books:  
             p GET https://api.myownfancyproject.com/books     
         div.column3
-            h3.title Response
+            h3.response Response
             pre=snippet
             

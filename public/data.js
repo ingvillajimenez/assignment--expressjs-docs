@@ -1,5 +1,5 @@
 module.exports = {
-    books: `{
+    books: `      {
         data: [{
           id: 1,
           name: "To Kill a Mockingbird",
@@ -35,8 +35,8 @@ module.exports = {
           prev: null,
           next: 2
         }
-    }`,
-    booksId: `{
+      }`,
+    booksId: `      {
         data: [{
           id: 1,
           name: "To Kill a Mockingbird",
@@ -45,8 +45,8 @@ module.exports = {
         meta: {
           books: 1
         }
-    }`,
-    products: `{
+      }`,
+    products: `      {
         data: [{
           id: 1,
           name: "Crocs Men's and Women's Classic Clog | Comfort Slip On Casual Water Shoe | Lightweight",
@@ -78,8 +78,8 @@ module.exports = {
           prev: 1,
           next: 3
         }
-    }`,
-    productsId: `{
+      }`,
+    productsId: `      {
         data: [{
           id: 1,
           name: "Crocs Men's and Women's Classic Clog | Comfort Slip On Casual Water Shoe | Lightweight",
@@ -88,5 +88,5 @@ module.exports = {
         meta: {
           products: 1
         }
-    }`
+      }`
 }

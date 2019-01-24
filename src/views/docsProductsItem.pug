@@ -3,7 +3,8 @@ html
     title Products Item
     link(rel='stylesheet', href='/static/css/app.css')
   body
-    h1=projectTitle
+    div.title
+        h1=projectTitle
     div.container
         div.column1
             aside 
@@ -16,14 +17,16 @@ html
                     a(href='/docs/products/list') GET /products
                 li 
                     a(href='/docs/products/item') GET /products/:id
+                li
+                    a(href='/') Go to home
         div.column2
-            h3 Endpoint
+            h3 Retrieving a specific product
+            p You can retrieve information for a specific product by sending an HTTP GET request to the Product resource URI:
             p https://api.myownfancyproject.com/products/id
-            h3 Objective
-            p 
+            p Replace the id path parameter with the ID of the product to retrieve. See the Myownfancyproject Products IDs section for more information on product IDs
             h3 Request
-            p Here is an example of a GET request that gets a single product:  
-            p GET https://api.myownfancyproject.com/products/10  
+            p Here is an example of a GET request that gets a single product:
+            p GET https://api.myownfancyproject.com/products/10
         div.column3
-            h3.title Response
+            h3.response Response
             pre=snippet

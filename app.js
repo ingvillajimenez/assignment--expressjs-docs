@@ -3,16 +3,16 @@ const express =  require('express');
 const app = express();
 const logger = require('morgan');
 
-const jsonResponse = require('./data')
+const jsonResponse = require('./public/data')
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(logger('dev'));
 
-app.set('views', './src/views')
-app.set('view engine', 'pug')
+app.set('views', './src/views');
+app.set('view engine', 'pug');
 
-app.use('/static', express.static('./public'))
+app.use('/static', express.static('./public'));
 
 app.get('/', (req, res) => {
     res.render('main', {
